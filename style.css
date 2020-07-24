@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box; /* Padding doesnt affect the width orsm */
+	margin: 0; /* basically reset on every element */
+	padding: 0; /* basically reset on every element */
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #fff;
+	color: #000;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+a {
+	color: #262626;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none; /* no bullets */
+}
+
+.container { /* wraps around everything */
+	width: 90%;
+	max-width: 1100px; /* takes up 90% until 1100px */
+	margin: auto; /* even margin all sides, puts it to middle */
+}
+
+/* Nav */
+.main-nav { /* all inner items to flex-items and aligns to horisontal row */
+	display: flex;
+	align-items: center; /* aligned horisontally */
+	justify-content: space-between; /* equal space between */
+	height: 60px;
+	padding: 20px 0; /* 20px - top & bottom */
+	font-size: 13px;
+}
+
+.main-nav .logo {
+	width: 110px;
+}
+
+/* Display nav list items in a horisontal row */
+.main-nav ul { 
+	display: flex;
+}
+
+.main-nav ul li {
+	padding: 0 10px;
+}
+
+/* Push underline down */
+.main-nav ul li a{
+	padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover{
+	border-bottom: 2px solid #262626;
+	
+}
+
+/* Push nav links next to logo */
+.main-nav ul.main-menu {
+	flex: 1;
+	margin-left: 20px;
+}
