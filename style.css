@@ -223,7 +223,7 @@ unless we set the width to 100%  */
 	background: #f2f2f2;
 	color: #616161;
 	font-size: 12px;
-	padding: 35px 0;
+	padding: 35px 0 0 0;
 }
 
 .links-inner {
